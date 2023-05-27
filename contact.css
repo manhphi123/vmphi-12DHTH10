@@ -1,0 +1,145 @@
+:root{
+    --bg1:#FF9933;
+    --bg2:#66FF99;
+    --bg3:#d7e1ec;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 600px;
+    text-align: center;
+}
+.main{
+    width: 70%;
+
+}
+.container{
+    width: 350px;
+    height: 450px;
+    border-radius: 10px;
+    background: linear-gradient(var(--bg1), var(--bg2));
+
+}
+.container img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid #ffffff;
+    margin: 20px auto;
+    cursor: pointer;
+    position: relative;
+}
+.container h2{
+    color: #fffffF;
+}
+.container p{
+    color: #fffffF;
+    margin: 0 30px 12px;  
+}
+.btn-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 30px 12px;
+}
+.btn-container button{
+    height: 35px;
+    width: 150px;
+    border: none;
+    margin-right: 12px;
+    border-radius: 5px;
+    color: #333333;
+    cursor: pointer;
+}
+.icon-social{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+.icon-social i{
+    padding: 12px;
+    /*color: var(--bg2);*/
+    background: #fff;
+    border-radius: 50%;
+    margin: 5px 0 0 12px;
+}
+.pr-da img{
+    width: 300px;
+    height: 200px;
+    border-radius: 20%;
+    border: 5px solid #ffffff;
+    margin: 20px 10px;
+    cursor: pointer;
+    position: relative;
+  
+}
+.pr-da{
+    width: 450px;
+    height: 450px;
+    border-radius: 10px;
+    background: linear-gradient(var(--bg2), var(--bg1));
+
+}
+.pr-da h2{
+    color: #fffffF;
+  
+}
+.pr-da p{
+    color: #fffffF;
+    margin: 0 30px 12px;
+
+}
+@media screen and  (max-width:570px){
+    body{
+        width: 100vw;
+        height: 600px;
+        text-align: center;
+        flex:none;
+    }
+    .container{
+        width: 250px;
+        height: 500px;
+    
+    }
+    .container img{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 5px solid #ffffff;
+        margin: 20px auto;
+        cursor: pointer;
+        position: relative;
+    }
+    .btn-container{
+       
+        justify-content: space-between;
+        margin: 0 30px 12px;
+    }
+
+    .icon-social{
+        position:static;
+        flex-direction: row;
+        padding: 0 15px;
+    }
+    .pr-da{
+        width: 250px;
+        height: 500px;
+        border-radius: 10px;
+        background: linear-gradient(var(--bg2), var(--bg1));
+    }
+    .pr-da img{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 5px solid #ffffff;
+        margin: 20px 10px;
+        cursor: pointer;
+        position: relative;
+      
+    }
+}

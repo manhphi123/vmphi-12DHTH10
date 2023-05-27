@@ -1,0 +1,18 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+  }
+
+  html {
+    font-size: 62.5%;
+  }
+  :root {
+    --var_white: #fff;
+  }
+  
+  #main {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
